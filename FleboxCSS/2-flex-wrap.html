@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid gray;
+            max-width: 300px;
+
+        }
+        .flex-container-two{
+            display: flex;
+            border: 2px solid gray;
+            max-width: 300px;
+
+        }
+
+        .flex-container-column{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid gray;
+            max-width: 300px;
+
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .orange{
+            background-color: burlywood; 
+        }
+
+        .red{
+            background-color: crimson;
+        }
+
+        .green{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>No Fap</h1>
+
+    <div class="flex-container nowrap">
+        <div class="item orange">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item orange">4</div>
+        <div class="item red">5</div>
+        <div class="item green">6</div>
+    </div>
+
+    <h1>Crap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item orange">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+        <div class="item orange">5</div>
+        <div class="item red">6</div>
+    </div>
+
+    <h1>Trap Two</h1>
+
+    <div class="flex-container-two wrap">
+        <div class="item orange">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+        <div class="item orange">5</div>
+        <div class="item red">6</div>
+        <div class="item orange">5</div>
+    </div>
+
+    <h1>Fap Reverse</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item orange">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+        <div class="item orange">5</div>
+    </div>
+
+    <h1>Rap Reverse Column</h1>
+
+    <div class="flex-container-column wrap-reverse">
+        <div class="item orange">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item red">4</div>
+        <div class="item orange">5</div>
+    </div>
+</body>
+</html>
